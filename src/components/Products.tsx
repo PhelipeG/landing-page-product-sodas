@@ -54,7 +54,7 @@ const ProductsData = [
 export default function Products() {
   return (
     <div className="bg-gray-200 py-8">
-      <div className="container py-14">
+      <div className="container mx-auto py-14">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -62,14 +62,14 @@ export default function Products() {
         >
           Nossos Produtos
         </motion.h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
           {ProductsData.map((item) => (
             <motion.div
               variants={fadeUp(item.delay)}
               key={item.id}
               initial="hidden"
               whileInView={"show"}
-              className="flex flex-col items-center justify-center p-5 max-w-[300px] mx-auto shadow-lg rounded-xl bg-white"
+              className="flex flex-col items-center justify-center p-5 max-w-[300px]  shadow-lg rounded-xl bg-white"
             >
               <img
                 src={item.image}

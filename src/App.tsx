@@ -2,6 +2,7 @@ import { UpdateFollower } from "react-mouse-follower";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
+import Blog from "./components/blog";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       >
         <Hero />
         <Products />
+        <Blog />
         <Footer />
       </UpdateFollower>
     </main>
