@@ -6,6 +6,10 @@
 ![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=flat-square&logo=vite)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-12.5.0-0055FF?style=flat-square&logo=framer)
 
+## 🌐 Demo Online
+
+> 🔗 **[Link do Projeto](https://landing-page-product-sodas.vercel.app)**
+
 ## 📋 Sobre o Projeto
 
 Esta é uma landing page moderna e animada para uma marca de refrigerantes, construída com React, TypeScript e Tailwind CSS. O projeto apresenta animações interativas, um cursor customizado e um design responsivo, criando uma experiência de usuário envolvente e visualmente atraente.
@@ -36,8 +40,8 @@ Esta é uma landing page moderna e animada para uma marca de refrigerantes, cons
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/landing-refri.git
-   cd landing-refri
+   git clone https://github.com/PhelipeG/landing-page-product-sodas.git
+   cd landing-page-product-sodas
    ```
 
 2. Instale as dependências:
@@ -98,6 +102,8 @@ landing-refri/
 ## 📱 Capturas de Tela Responsivas
 
 <!-- Aqui você pode adicionar screenshots da versão mobile e desktop -->
+
+![Projeto Mobile](./src/assets/screenshots/Captura%20de%20tela%202025-03-22%20125703.png)
 
 ## 🤝 Contribuições
 
