@@ -3,7 +3,7 @@ export interface HeadphoneData {
   image: string;
   title: string;
   subtitle: string;
-  price: string;
+  price: number;
   modal: string;
   bgColor: string;
 }

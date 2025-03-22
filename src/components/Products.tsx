@@ -62,7 +62,7 @@ export default function Products() {
         >
           Nossos Produtos
         </motion.h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8 justify-items-center ">
           {ProductsData.map((item) => (
             <motion.div
               variants={fadeUp(item.delay)}

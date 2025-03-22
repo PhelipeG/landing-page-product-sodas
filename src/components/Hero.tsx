@@ -41,7 +41,7 @@ const headphoneData: HeadphoneData[] = [
     title: "Orange Fanta",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos iusto minima ad ut id eos ad ut id eos",
-    price: "$40",
+    price: 40,
     modal: "Orange",
     bgColor: "#cf4f00",
   },
@@ -51,7 +51,7 @@ const headphoneData: HeadphoneData[] = [
     title: "Cola Zero",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos iusto minima ad ut id eos ad ut id eos",
-    price: "$100",
+    price: 100,
     modal: "Zero",
     bgColor: "#727272",
   },
@@ -61,7 +61,7 @@ const headphoneData: HeadphoneData[] = [
     title: "Coca Cola",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos iusto minima ad ut id eos ad ut id eos",
-    price: "$100",
+    price: 100,
     modal: "Cola",
     bgColor: "#ac1a00",
   },
@@ -71,7 +71,7 @@ const headphoneData: HeadphoneData[] = [
     title: "Coca Cola",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos iusto minima ad ut id eos ad ut id eos",
-    price: "$150",
+    price: 250,
     modal: "Cola",
     bgColor: "#418b0c",
   },
@@ -92,7 +92,7 @@ export default function Hero() {
       className="bg-brandDark text-white"
     >
       <Navbar />
-      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[605px]">
+      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[605px] mx-auto">
         <div className="flex flex-col justify-center py-14 md:py-0 xl:max-w-[500px] order-2 md:order-1">
           <div className="space-y-5 text-center md:text-left">
             <AnimatePresence mode="wait">
@@ -133,7 +133,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
-              className="grid grid-cols-3 gap-10"
+              className="grid grid-cols-3 gap-10 md:gap-5 justify-center md:justify-start"
             >
               {headphoneData.map((item) => {
                 return (
@@ -165,9 +165,9 @@ export default function Hero() {
                       </div>
                       <div className="!mt-6 space-y-1 text-center">
                         <p className="text-base line-through opacity-50">
-                          {item.price}
+                          ${item.price}
                         </p>
-                        <p className="text-xl font-bold">{item.price}</p>
+                        <p className="text-xl font-bold">{item.price - 20}</p>
                         {/* <p className="text-xs font-normal text-nowrap">
                             {item.modal}
                           </p> */}

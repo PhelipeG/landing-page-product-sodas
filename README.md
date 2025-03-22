@@ -1,54 +1,122 @@
-# React + TypeScript + Vite
+# 🥤 Fanta Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-3178C6?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4.0.14-38B2AC?style=flat-square&logo=tailwind-css)
+![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=flat-square&logo=vite)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-12.5.0-0055FF?style=flat-square&logo=framer)
 
-Currently, two official plugins are available:
+## 📋 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta é uma landing page moderna e animada para uma marca de refrigerantes, construída com React, TypeScript e Tailwind CSS. O projeto apresenta animações interativas, um cursor customizado e um design responsivo, criando uma experiência de usuário envolvente e visualmente atraente.
 
-## Expanding the ESLint configuration
+![Projeto Preview](./src/assets/screenshots/Captura%20de%20tela%202025-03-22%20125053.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- 🖱️ Cursor personalizado e interativo usando React Mouse Follower
+- 🎭 Animações fluidas com Framer Motion
+- 📱 Layout totalmente responsivo
+- 🎨 Tema dinâmico baseado no produto selecionado
+- 🔄 Transições suaves entre os diferentes produtos
+- 📝 Seções de blog e produtos com cards interativos
+
+## 🚀 Tecnologias Utilizadas
+
+- **React** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Adiciona tipagem estática ao JavaScript
+- **Tailwind CSS** - Framework CSS para design rápido e responsivo
+- **Framer Motion** - Biblioteca para animações fluidas
+- **React Mouse Follower** - Implementação de cursor personalizado
+- **Vite** - Build tool e servidor de desenvolvimento rápido
+- **ESLint** - Linter para manter qualidade de código
+
+## 🛠️ Instalação e Uso
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/landing-refri.git
+   cd landing-refri
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Execute o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Para build de produção:
+
+   ```bash
+   npm run build
+   ```
+
+5. Para visualizar o build:
+   ```bash
+   npm run preview
+   ```
+
+## 📁 Estrutura do Projeto
+
+```
+landing-refri/
+├── public/
+├── src/
+│   ├── assets/       # Imagens e recursos estáticos
+│   ├── components/   # Componentes React
+│   │   ├── Banner.tsx
+│   │   ├── BannerText.tsx
+│   │   ├── Blog.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   └── Products.tsx
+│   ├── types/        # Definições de tipos TypeScript
+│   ├── App.tsx       # Componente principal
+│   ├── main.tsx      # Ponto de entrada da aplicação
+│   └── index.css     # Estilos globais e configuração do Tailwind
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⭐ Recursos e Destaques
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Integração perfeita de animações com Framer Motion
+- Cursor personalizado que muda com base no elemento com hover
+- Design responsivo para dispositivos móveis e desktop
+- Transições suaves entre produtos na seção Hero
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📱 Capturas de Tela Responsivas
+
+<!-- Aqui você pode adicionar screenshots da versão mobile e desktop -->
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
+
+- Faça um fork do projeto
+- Crie sua branch de feature (git checkout -b feature/nova-feature)
+- Commit suas mudanças (git commit -m 'Adiciona nova feature')
+- Push para a branch (git push origin feature/nova-feature)
+- Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+## 📞 Contato
+
+Criado por [Luis] - [luisphelipe1000@gmail.com]
+
+---
+
+⭐️ Feito com ❤️ e React!

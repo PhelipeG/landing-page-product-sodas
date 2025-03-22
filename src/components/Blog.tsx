@@ -38,10 +38,10 @@ const BlogsData = [
 export default function Blog() {
   return (
     <section className="bg-gray-50">
-      <div className="container py-14 mx-auto">
-        <h1 className="text-3xl font-bold text-center pb-8">Blogs</h1>
+      <div className="container py-14 mx-auto px-4 sm:px-6">
+        <h1 className="text-3xl font-bold text-center pb-8">Blog</h1>
         {/* card section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
           {BlogsData.map((item) => (
             <UpdateFollower
               mouseOptions={{
@@ -56,9 +56,9 @@ export default function Blog() {
               <div
                 key={item.id}
                 className="flex flex-col items-center justify-center gap-6 p-2 md:p-5
-               max-w-[300px] mx-auto shadow-lg rounded-md bg-white hover:-translate-y-2 duration-300"
+              w-full max-w-[300px]shadow-lg rounded-md bg-white hover:-translate-y-2 duration-300"
               >
-                <img src={item.img} alt="" />
+                <img src={item.img} alt="" className="w-full object-cover" />
                 <div className="space-y-2">
                   <h1 className="text-xl font-bold line-clamp-2">
                     {item.title}
